@@ -13,4 +13,6 @@ It contains the following:
 You should:
 
 - Replace `LICENSE` with a license applicable to your project (or at the very least, change the name - I do not want your copyright)
-- TODO
+- Run `chmod +x configure.sh` and then `./configure.sh` to set up the submodules
+- Replace this file
+- Profit!
