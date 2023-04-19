@@ -1,0 +1,11 @@
+build/
+
+*.o
+*.elf
+*.elf*
+*.out
+*.hex
+*.uf2
+*.uf2*
+
+*.pio.h
