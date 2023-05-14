@@ -13,6 +13,7 @@ It contains the following:
 You should:
 
 - Replace `LICENSE` with a license applicable to your project (or at the very least, change the name - I do not want your copyright)
-- Run `chmod +x configure.sh` and then `./configure.sh` to set up the submodules
+- Initialise the submodule for the SDK (`git submodule init`) and then update it (`git submodule update`)
+- Initialise and update any submodules you require in the SDK itself (like TinyUSB, or the CYW43 stack for the Pico W)
 - Replace this file
 - Profit!
