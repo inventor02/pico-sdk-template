@@ -17,3 +17,4 @@ target_link_libraries(${PRJ_NAME}
 )
 
 add_subdirectory(src)
+add_subdirectory(include)
