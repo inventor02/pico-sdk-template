@@ -3,6 +3,8 @@ set(CMAKE_C_STANDARD 11)
 set(CMAKE_EXPORT_COMPILE_COMMANDS TRUE)
 
 set(PRJ_NAME "your-project-name-here")
+set(PRJ_VERSION "0.1.0")
+set(PICO_BOARD "pico")
 
 if(NOT CMAKE_BUILD_TYPE)
   message("Defaulting CMAKE_BUILD_TYPE=Debug")
@@ -11,11 +13,16 @@ endif()
 
 include(lib/pico-sdk/pico_sdk_init.cmake)
 
-project(${PRJ_NAME})
+project(${PRJ_NAME} VERSION ${PRJ_VERSION})
 pico_sdk_init()
 
 add_executable(${PRJ_NAME})
 pico_add_extra_outputs(${PRJ_NAME})
+
+pico_set_program_name(${PRJ_NAME} ${PRJ_NAME})
+pico_set_program_description(${PRJ_NAME} "${PRJ_NAME} binary")
+pico_set_program_url(${PRJ_NAME} "https://github.com/inventor02/${PRJ_NAME}")
+pico_set_program_version(${PRJ_NAME} ${CMAKE_PROJECT_VERSION})
 
 target_link_libraries(${PRJ_NAME}
   pico_stdlib
