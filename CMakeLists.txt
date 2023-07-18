@@ -1,6 +1,7 @@
 cmake_minimum_required(VERSION 3.12)
 set(CMAKE_C_STANDARD 11)
 set(CMAKE_EXPORT_COMPILE_COMMANDS TRUE)
+string(TIMESTAMP BUILD_TIMESTAMP "%Y%m%d.%H%M%S" UTC)
 
 set(PRJ_NAME "your-project-name-here")
 set(PRJ_VERSION "0.1.0")
