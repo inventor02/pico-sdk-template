@@ -9,3 +9,5 @@ build/
 *.uf2*
 
 *.pio.h
+
+.DS_Store
