@@ -13,7 +13,9 @@ It contains the following:
 You should:
 
 - Replace `LICENSE` with a license applicable to your project (or at the very least, change the name - I do not want your copyright)
-- Initialise the submodule for the SDK (`git submodule init`) and then update it (`git submodule update`)
-- Initialise and update any submodules you require in the SDK itself (like TinyUSB, or the CYW43 stack for the Pico W)
+- Either initialise the SDK submodules:
+    - Initialise the submodule for the SDK (`git submodule init`) and then update it (`git submodule update`)
+    - Initialise and update any submodules you require in the SDK itself (like TinyUSB, or the CYW43 stack for the Pico W)
+- Or, ensure `PICO_SDK_PATH` is set in your environment to use that copy of the SDK instead.
 - Replace this file
 - Profit!
